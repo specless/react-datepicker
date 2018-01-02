@@ -6,12 +6,6 @@
 }
 
 .react-datepicker {
-  font-family: $datepicker__font-family;
-  font-size: $datepicker__font-size;
-  background-color: #fff;
-  color: $datepicker__text-color;
-  border: 1px solid $datepicker__border-color;
-  border-radius: $datepicker__border-radius;
   display: inline-block;
   position: relative;
 }
@@ -84,7 +78,6 @@
 .react-datepicker__current-month,
 .react-datepicker-time__header {
   margin-top: 0;
-  color: $datepicker__header-color;
   font-weight: bold;
   font-size: $datepicker__font-size * 1.18;
 }
@@ -98,6 +91,7 @@
   width: 0;
   border: $datepicker__navigation-size solid transparent;
   z-index: 1;
+  border-bottom-width: "";
 
   &--previous {
     left: 10px;
@@ -148,11 +142,11 @@
 }
 
 .react-datepicker__month-container {
-  float: left;
+  // TODO: Test to see what this has changed. Probably effects time component
+  // float: left;
 }
 
 .react-datepicker__month {
-  margin: $datepicker__margin;
   text-align: center;
 }
 
@@ -191,8 +185,6 @@
             background-color: $datepicker__background-color;
           }
           &--selected {
-            background-color: $datepicker__selected-color;
-            color: white;
             font-weight: bold;
             &:hover {
               background-color: $datepicker__selected-color;
@@ -236,7 +228,6 @@
 .react-datepicker__day-name,
 .react-datepicker__day,
 .react-datepicker__time-name {
-  color: $datepicker__text-color;
   display: inline-block;
   width: $datepicker__item-size;
   line-height: $datepicker__item-size;
@@ -249,7 +240,6 @@
 
   &:hover {
     border-radius: $datepicker__border-radius;
-    background-color: $datepicker__background-color;
   }
 
   &--today {
@@ -258,8 +248,6 @@
 
   &--highlighted {
     border-radius: $datepicker__border-radius;
-    background-color: $datepicker__highlighted-color;
-    color: #fff;
 
     &:hover {
       background-color: darken($datepicker__highlighted-color, 5%);
@@ -278,8 +266,6 @@
   &--in-selecting-range,
   &--in-range {
     border-radius: $datepicker__border-radius;
-    background-color: $datepicker__selected-color;
-    color: #fff;
 
     &:hover {
       background-color: darken($datepicker__selected-color, 5%);

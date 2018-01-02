@@ -271,7 +271,7 @@ export default class Calendar extends React.Component {
       return;
     }
     return (
-      <a
+      <span
         className="react-datepicker__navigation react-datepicker__navigation--previous"
         onClick={this.decreaseMonth}/>
     );
@@ -296,7 +296,7 @@ export default class Calendar extends React.Component {
       classes.push("react-datepicker__navigation--next--with-today-button");
     }
 
-    return <a className={classes.join(" ")} onClick={this.increaseMonth} />;
+    return <span className={classes.join(" ")} onClick={this.increaseMonth} />;
   };
 
   renderCurrentMonth = (date = this.state.date) => {
@@ -376,7 +376,7 @@ export default class Calendar extends React.Component {
             this.monthContainer = div;
           }}
           className="react-datepicker__month-container">
-          <div className="react-datepicker__header">
+          <div className="react-datepicker__header sp-container">
             {this.renderCurrentMonth(monthDate)}
             <div
               className={`react-datepicker__header__dropdown react-datepicker__header__dropdown--${

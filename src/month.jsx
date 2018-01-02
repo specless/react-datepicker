@@ -125,7 +125,7 @@ export default class Month extends React.Component {
 
   getClassNames = () => {
     const { selectingDate, selectsStart, selectsEnd } = this.props;
-    return classnames("react-datepicker__month", {
+    return classnames("react-datepicker__month sp-padding-1 sp-container sp-alt-two", {
       "react-datepicker__month--selecting-range":
         selectingDate && (selectsStart || selectsEnd)
     });

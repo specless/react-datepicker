@@ -20,12 +20,12 @@ export default class Root extends React.Component {
                 Crafted by <img src="images/logo.png" className="hero__image" alt="HackerOne" title="HackerOne" />
               </a>
             </div>
-            <div className="hero__example">
+            <div className="hero__example sp-container-dark">
               <HeroExample />
             </div>
           </div>
         </div>
-        <div className="wrapper">
+        {/*<div className="wrapper">
           <h1>ReactJS Datepicker</h1>
           <p className="badges">
             <a href="https://npmjs.org/package/react-datepicker">
@@ -56,7 +56,7 @@ export default class Root extends React.Component {
 
         <a href="https://github.com/Hacker0x01/react-datepicker/">
           <img className="github-ribbon" src="images/ribbon.png" alt="Fork me on GitHub" />
-        </a>
+        </a>*/}
       </div>
     )
   }

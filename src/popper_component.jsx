@@ -59,7 +59,7 @@ export default class PopperComponent extends React.Component {
     let popper;
 
     if (!hidePopper) {
-      const classes = classnames("react-datepicker-popper", className);
+      const classes = classnames("react-datepicker-popper", "sp-overlay", className);
       popper = (
         <Popper
           className={classes}
