@@ -574,7 +574,7 @@ export default class DatePicker extends React.Component {
       return (
         <div>
           {!this.props.inline ? (
-            <div className="react-datepicker__input-container">
+            <div className="react-datepicker__input-container sp-flex">
               {this.renderDateInput()}
               {this.renderClearButton()}
             </div>
@@ -592,7 +592,7 @@ export default class DatePicker extends React.Component {
         hidePopper={!this.state.open || this.props.disabled}
         popperModifiers={this.props.popperModifiers}
         targetComponent={
-          <div className="react-datepicker__input-container">
+          <div className="react-datepicker__input-container sp-flex">
             {this.renderDateInput()}
             {this.renderClearButton()}
           </div>
