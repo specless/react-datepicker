@@ -75,7 +75,7 @@ export default class PopperComponent extends React.Component {
     }
 
     return (
-      <Manager>
+      <Manager className='sp-relative'>
         <Target className="react-datepicker-wrapper">{targetComponent}</Target>
         {popper}
       </Manager>
