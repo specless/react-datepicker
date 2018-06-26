@@ -481,7 +481,7 @@ describe("Day", () => {
   });
 
   describe("disabled", () => {
-    const className = "react-datepicker__day--disabled";
+    const className = "react-datepicker__day--disabled sp-state-disabled";
 
     it("should be enabled if date is enabled", () => {
       const shallowDay = renderDay(newDate());

@@ -31,7 +31,10 @@ describe("DatePicker", () => {
         ]}
       />
     );
-    expect(datePicker.find(".react-datepicker__time-list-item--disabled")).to
-      .exist;
+    expect(
+      datePicker.find(
+        ".react-datepicker__time-list-item--disabled.sp-state-disabled"
+      )
+    ).to.exist;
   });
 });

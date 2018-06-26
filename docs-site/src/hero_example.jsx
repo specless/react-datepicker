@@ -21,7 +21,8 @@ export default class HeroExample extends React.Component {
       autoFocus
       selected={this.state.startDate}
       onChange={this.handleChange}
-      showTimeSelect
+      maxDate={moment().add(5, 'days')}
+      minDate={moment().subtract(5, 'days')}
     />
   }
 }

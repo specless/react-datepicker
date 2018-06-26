@@ -65,7 +65,7 @@ export default class Time extends React.Component {
         isTimeInDisabledRange(time, this.props)) ||
       (this.props.excludeTimes && isTimeDisabled(time, this.props.excludeTimes))
     ) {
-      classes.push("react-datepicker__time-list-item--disabled");
+      classes.push("react-datepicker__time-list-item--disabled sp-state-disabled");
     }
 
     return classes.join(" ");

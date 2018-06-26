@@ -157,6 +157,7 @@ export default class Day extends React.Component {
             "react-datepicker__day--" + getDayOfWeekCode(this.props.day),
             {
                 "react-datepicker__day--disabled": this.isDisabled(),
+                "sp-state-disabled": this.isDisabled(),
                 "react-datepicker__day--selected": this.isSameDay(this.props.selected),
                 "react-datepicker__day--keyboard-selected": this.isKeyboardSelected(),
                 "react-datepicker__day--range-start": this.isRangeStart(),
@@ -181,6 +182,7 @@ export default class Day extends React.Component {
             <div
                 className={this.getClassNames(this.props.day)}
                 style={{
+                    backgroundImage: this.isDisabled() ? 'none' : undefined,
                     color: this.isSameDay(this.props.selected) ? 'white' : 'inherit'
                 }}
                 onClick={this.handleClick}
