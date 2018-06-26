@@ -193,6 +193,7 @@
           }
           &--disabled {
             color: $datepicker__muted-color;
+            opacity: 0.5;
 
             &:hover {
               cursor: default;
@@ -297,6 +298,7 @@
   &--disabled {
     cursor: default;
     color: $datepicker__muted-color;
+    opacity: 0.5;
 
     &:hover {
       background-color: transparent;
